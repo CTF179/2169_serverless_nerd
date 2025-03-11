@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1741356678465" clover="3.2.0">
+  <project timestamp="1741356678466" name="All files">
+    <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4" elements="16" coveredelements="12" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
+    <file name="ecommerce.js" path="C:\Users\BrianArayathel\Programming\Training\CollegeBoard\2169_serverless_nerd\examples\week_1\node_testing\ecommerce.js">
+      <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+    </file>
+    <file name="mathOperations.js" path="C:\Users\BrianArayathel\Programming\Training\CollegeBoard\2169_serverless_nerd\examples\week_1\node_testing\mathOperations.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>
