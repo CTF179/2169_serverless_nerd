@@ -1,7 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const jwt = require('jsonwebtoken');
+const bcrypt = require("bcrypt");
+
+const secretKey = "my-secret-key";
 
 const userService = require("../service/userService");
+const { authenticateToken } = require('../util/jwt');
 
 router.post("/", validatePostUser, async (req, res) => {
     const data = await userService.postUser(req.body);
@@ -16,11 +21,30 @@ router.post("/login", async (req, res) => {
     const {username, password} = req.body;
     const data = await userService.validateLogin(username, password);
     if(data){
-        res.status(200).json({message: "You have logged in!"});
+        // req.session.username = username;
+        const token = jwt.sign(
+            {
+                id: data.user_id,
+                username
+            },
+                secretKey,
+            {
+                expiresIn: "15m"
+        })
+        res.status(200).json({message: "You have logged in!", token});
     }else{
         res.status(401).json({message: "Invalid login"});
     }
 })
+
+// router.get("/logout", (req, res) => {
+//     req.session.destroy((err) => {
+//         if(err){
+//             logger.error("Error destroying session", err);
+//         }
+//         res.redirect("/");
+//     })
+// });
 
 function validatePostUser(req, res, next){
     const user = req.body;

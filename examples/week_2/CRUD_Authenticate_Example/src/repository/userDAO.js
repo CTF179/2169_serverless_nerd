@@ -1,5 +1,5 @@
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
-const { DynamoDBDocumentClient, PutCommand, ScanCommand} = require("@aws-sdk/lib-dynamodb");
+const { DynamoDBDocumentClient, PutCommand, ScanCommand, QueryCommand} = require("@aws-sdk/lib-dynamodb");
 const logger = require("../util/logger");
 
 const client = new DynamoDBClient({region: "us-east-1"});
@@ -40,8 +40,26 @@ async function getUserByUsername(username){
     }
 }
 
+async function getUserById(userId){
+    const command = new QueryCommand({
+        TableName,
+        KeyConditionExpression: "#id = :id",
+        ExpressionAttributeNames: {"#id" : "user_id"},
+        ExpressionAttributeValues: {":id": userId}
+    });
+
+    try {
+       const data = await documentClient.send(command);
+       return data.Items[0];
+    } catch (error) {
+        logger.error(err);
+        return null;
+    }
+};
+
 
 module.exports = {
     postUser,
-    getUserByUsername
+    getUserByUsername,
+    getUserById
 };
