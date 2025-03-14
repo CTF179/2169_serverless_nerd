@@ -31,3 +31,13 @@
 2025-03-13T14:32:27.919Z [info]: Incoming GET : /protected
 2025-03-13T14:32:27.921Z [error]: invalid signature
 2025-03-13T14:46:42.266Z [info]: Incoming POST : /users
+2025-03-13T14:47:35.207Z [info]: Incoming POST : /users
+2025-03-13T14:47:35.679Z [info]: PUT command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"7DMSL0LBB0MRGOJBCIEVN34BUFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-03-13T14:48:12.632Z [info]: Incoming POST : /users/login
+2025-03-13T14:48:12.680Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"EGAHLKS78GUK5H6589IRKCLGGNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"ee70efbe-4afc-45e9-91c3-73905569ba69","password":"$2b$10$4d9lBeeBd4SKD3KKMGQTneAToPgR2nRHWMW81aWjnhyCOn3BOCwki","username":"user3"}],"ScannedCount":3}
+2025-03-13T14:48:30.236Z [info]: Incoming GET : /protected
+2025-03-13T14:48:30.241Z [error]: invalid signature
+2025-03-13T14:49:15.598Z [info]: Incoming GET : /protected
+2025-03-13T14:49:15.600Z [error]: invalid signature
+2025-03-13T14:57:45.086Z [info]: Incoming GET : /protected
+2025-03-13T14:57:45.308Z [info]: Incoming GET : /favicon.ico
