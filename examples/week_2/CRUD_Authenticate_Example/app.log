@@ -41,3 +41,9 @@
 2025-03-13T14:49:15.600Z [error]: invalid signature
 2025-03-13T14:57:45.086Z [info]: Incoming GET : /protected
 2025-03-13T14:57:45.308Z [info]: Incoming GET : /favicon.ico
+2025-03-17T13:13:58.624Z [info]: Incoming POST : /users/login
+2025-03-17T13:13:59.067Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"RFJSB0RP1JVVC30FAM9UH7147BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"1c35be7c-8fb4-4f11-bcc2-20f74e70faa5","password":"pass1","username":"user1"}],"ScannedCount":3}
+2025-03-17T13:14:51.491Z [info]: Incoming POST : /users/login
+2025-03-17T13:14:51.533Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"000EB4G6U1D1G5JO3J2JB3GS13VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"1c35be7c-8fb4-4f11-bcc2-20f74e70faa5","password":"pass1","username":"user1"}],"ScannedCount":3}
+2025-03-17T13:16:53.323Z [info]: Incoming POST : /users/login
+2025-03-17T13:16:53.707Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"RTVCBN1NSN21ECKNIMGCQOMM7JVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"1c35be7c-8fb4-4f11-bcc2-20f74e70faa5","password":"pass1","username":"user1"}],"ScannedCount":3}

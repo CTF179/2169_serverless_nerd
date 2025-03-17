@@ -20,6 +20,7 @@ router.post("/", validatePostUser, async (req, res) => {
 router.post("/login", async (req, res) => {
     const {username, password} = req.body;
     const data = await userService.validateLogin(username, password);
+    console.log(data);
     if(data){
         // req.session.username = username;
         const token = jwt.sign(
