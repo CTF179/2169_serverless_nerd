@@ -1,0 +1,12 @@
+/* <div className='product-div' key={index}>
+    <div className='name-div'>{obj.name}</div>
+    <div className='price-div'>{obj.price}</div>
+</div> */
+
+.product-div{
+    background-color: aquamarine;
+}
+
+.name-div, .price-div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
