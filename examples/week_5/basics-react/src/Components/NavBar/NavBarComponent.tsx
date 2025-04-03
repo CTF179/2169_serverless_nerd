@@ -42,6 +42,21 @@ function NavBarComponent() {
                   Props
                 </Link>
               </li>
+               <li className="nav-item">
+                <Link className="nav-link" to="/state">
+                  State
+                </Link>
+              </li>
+               <li className="nav-item">
+                <Link className="nav-link" to="/effect">
+                  Effect
+                </Link>
+              </li>
+               <li className="nav-item">
+                <Link className="nav-link" to="/poke">
+                  Poke
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
