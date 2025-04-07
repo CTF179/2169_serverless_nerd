@@ -7,6 +7,9 @@ import NavBarComponent from "./Components/NavBar/NavBarComponent"
 import StateComponent from "./Components/Hooks/StateComponent"
 import SideEffectComponent from "./Components/Hooks/SideEffectComponent"
 import PokeComponent from "./Components/PokeComponent/controller/PokeComponent"
+import DashboardComponent from "./Components/Context/DashboardComponent"
+import AppDemo from "./Components/Context/AppDemo"
+
 
 function App() {
 
@@ -18,6 +21,7 @@ function App() {
       <ListComponent/>
       <ParentComponent/> */}
       <NavBarComponent/>
+      <AppDemo/>
       <Routes>
         <Route path="/" element={<ComponentOne/>}></Route>
         <Route path="/events" element={<EventsComponent/>}></Route>

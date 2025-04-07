@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PokeView from '../view/PokeView';
 import { Pokemon } from '../model/Pokemon';
+import PokeSearchComponent from './PokeSearchComponent';
 
 function PokeComponent() {
 
@@ -8,10 +9,6 @@ function PokeComponent() {
 
   let [pokeData, setPokeData] = useState<Pokemon | undefined> (undefined);
   
-  function pokemonNumberInput(event: React.ChangeEvent<HTMLInputElement>){
-    setPokemonNumber(event.target.value);
-  }
-
   async function pokeSearchButton(){
     let url = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
 
@@ -30,12 +27,7 @@ function PokeComponent() {
 
   return (
     <>
-
-      <h2>Pokemon Search</h2>
-      <input onChange={pokemonNumberInput} type="number"></input>
-
-      {/* <button onClick={pokeSearchButton}>Search</button> */}
-    
+      <PokeSearchComponent setPokemonNumber={setPokemonNumber}/>
       {
         pokeData ? <PokeView data={pokeData}/> : <h3>Loading</h3>
       }
